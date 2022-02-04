@@ -1,0 +1,110 @@
+En git hay 3 estados 
+
+1.- Working directory -> Es donde voy a estar trabajando con mi sarchivos 
+
+2.- Staging area -> Es donde voy a estar agregando mis archivos paara preparar para el guardado
+		    
+3.- Repository -> Es cuando ya etsemos seguros de pasar los cambios realizados
+
+*********************COMANDOS *************************
+ 
+* git init -> Es una manera de decirle a git que vamos a crear un proyecto nuevo o utilizar un proyecto 
+	      que ya creamos, es decir, es la forma de decirle a git que lo vamos a usar.
+
+* git add . -> Es para poder pasar los archivos del working directory al staging area
+
+* git status -> Es para saber en que estado están mis archivos, si estan en el working directory o 
+		staging area
+
+* git commit -> Es para pasarlos de staging area al repository, es tan solo para crear un primer 
+		snap shot o primera foto de mi código
+
+* git push -> Es para subirlo a un repository remoto, por ejemplo cuando ya tenemos nuestro codigo 
+	      ya está trabajado y lo vamos a subir a un servidor para que pueda ser accedido por 
+	      los desarrolladores que tienen permiso para modificar el código.
+
+* git pull -> Si estoy trabajando con varios desarrolladores, me va a traer el cambio que han 
+	      realizado los otros desarrolladores.
+
+* git clone -> Hace una copia del servidor central donde está el código a mi computadora para empezar a trabajar.
+
+* git config --global user.email "my email@ejemplo.com" -> Aqui vamos a coinfigurar git con nuestro correo 
+
+* git config --global user.name "my name" - > Configura mi nombre de git
+
+* git log -> Nos mostrara los comits que hemos realizado.
+
+* git checkout --  -> Este comando revertira los cambios que se han realizado en el archivo.
+
+* git branch --> Nos mostrara la rama en la que estamos 
+
+*git checkout -b NombreDeRama --> Nos crea una rama.
+
+* git checkout <nombre de la rama> --> nos movera de rama a la rama especificada
+
+* git diff <nombre del archivo>  --> Nos mostrara las diferencias entre el antes y el ahora, es decir, 
+				     antes de realizar el commit, escribimos git status y si hay archivos 
+				     en rojo, podemos comparar el archivo anterior con el archivo actual.
+
+NOTA!! -> Si queremos ignorar algunos archivos dentro de git, tenemos que crear un archivo dentro de nuestros
+	  Archivos, llamada .gitignore y ahi dentro vamos a escribir la carpeta que queremos ignorar
+	  ejemplo: test
+	  Y agregamos el archivo git add .gitignore y ya nos ignorara las carpetas escritas en el archivo. 
+
+* pwd -> Nos muestra la ruta en donde estamos ubicados.
+
+ ***************************************** CASO PRACTICO *******************************************************
+
+1.- Para tener una forma de poder seguir los archivos, antes de cualquier otro comando, tenemos que inicializar 
+    el repositorio 
+
+	* --> git ininit - Veremos como se crea una carpeta .git dentro de nuestra carpete del proyecto.
+
+2.- El siguiente comando es para ver que archivos tenemos trabajando
+
+	* --> git status - Nos mostrara que archivos estamos trabajando (los mostrados en rojo, indican que 
+									no se han agregado, los mostrados en
+									verde, indican que ya se agregaron)
+
+3.- El siguiente comando seria  para agregar los archivos
+
+	* --> git add <nombre del archivo> 
+	
+4.- Con este comando vamos a agregar los archivos al staging area 
+
+	* --> git commit (Nos arrojara lo id de los archivos y los podremos seguir con el siguiente comando)
+
+5.-  Para poder ver los comits que hemos hecho, escribimos...
+	
+	* --> git log ( Nos mostrara la informacion de los comits realizados)
+
+6.- Para agregar los cambios de los o el archivo, escribimos...
+
+	* --> git add .
+
+7.- Para poder guardar los cambios del archivo agregado, escribimos... ("Hacemos una foto de los archivos")
+
+
+	* --> git commit -m "Mensaje de tus archivos modificados" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
